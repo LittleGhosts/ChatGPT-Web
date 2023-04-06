@@ -62,8 +62,8 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
 
     // increase max token limit if use gpt-3.5
     if (model.toLowerCase().includes('gpt-3.5')) {
-      options.maxModelTokens = 8192 * 2
-      options.maxResponseTokens = 2048 * 2
+      options.maxModelTokens = 4096
+      options.maxResponseTokens = 4096
     }
 
     if (isNotEmptyString(OPENAI_API_BASE_URL))
